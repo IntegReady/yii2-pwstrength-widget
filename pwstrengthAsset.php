@@ -7,16 +7,12 @@ use yii\web\AssetBundle;
 class PwstrengthAsset extends AssetBundle
 {
     public $sourcePath = '@muravshchyk/Pwstrength/assets';
-    public $css        = [
-        'css/intlTelInput.css',
-    ];
 
     public $js      = [
-        'js/intlTelInput.js',
+        'js/pwstrength-bootstrap-1.2.9',
+		
     ];
-    public $cssOptions = [
-        'type' => 'text/css',
-    ];
+
     public $depends = [
         'yii\web\JqueryAsset',
         'yii\web\YiiAsset',
