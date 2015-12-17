@@ -20,7 +20,3 @@ class PwstrengthAsset extends AssetBundle
         'yii\bootstrap\BootstrapAsset',
     ];
 }
-
-
-
-vendor\bigferumdron\yii2-int-tel-input-widget\IntTelInput.php
