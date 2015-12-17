@@ -30,7 +30,7 @@ class Pwstrength extends InputWidget
     {
 
         PwstrengthAsset::register($this->view);
-        $view->registerJs("jQuery('#$id').pwstrength({common: {minChar: 8, usernameField: '#signupform-nickname'}});");
+        Yii::$app->view->registerJs("jQuery('#" . $this->options['id'] . "').pwstrength({common: {minChar: 8, usernameField: '#signupform-nickname'}});");
     }
 
 }
