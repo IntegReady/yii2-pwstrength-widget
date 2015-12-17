@@ -1,6 +1,6 @@
 {
     "name": "muravshchyk/yii2-pwstrength-widget",
-    "description": "Yii2 widget created on basis of jquery plugin https://github.com/ablanco/jquery.pwstrength.bootstrap"",
+    "description": "Yii2 widget created on basis of jquery plugin https://github.com/ablanco/jquery.pwstrength.bootstrap",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","helpers","widgets"],
     "license": "BSD-3-Clause",
