@@ -1,5 +1,5 @@
 <?php
-namespace bigferumdron\Pwstrength;
+namespace muravshchyk\Pwstrength;
 
 use Yii;
 use yii\helpers\Html;
