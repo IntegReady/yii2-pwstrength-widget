@@ -1,4 +1,5 @@
 <?php
+
 namespace muravshchyk\Pwstrength;
 
 use yii\web\AssetBundle;
