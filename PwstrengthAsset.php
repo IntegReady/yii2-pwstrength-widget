@@ -10,7 +10,7 @@ class PwstrengthAsset extends AssetBundle
     public $sourcePath = '@muravshchyk/Pwstrength/assets';
 
     public $js      = [
-        'js/pwstrength-bootstrap-1.2.9',
+        'js/pwstrength-bootstrap-1.2.9.js',
 		
     ];
 
