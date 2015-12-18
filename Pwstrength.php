@@ -4,7 +4,7 @@ namespace muravshchyk\Pwstrength;
 use Yii;
 use yii\helpers\Html;
 use yii\widgets\InputWidget;
-https://teamwox.privatefx.com/tasks/view/141
+
 
 class Pwstrength extends InputWidget
 {
@@ -45,7 +45,7 @@ class Pwstrength extends InputWidget
         $pwstrengthParams .= "usernameField: '{$this->usernameField}'";
 
         PwstrengthAsset::register($this->view);
-        Yii::$app->view->registerJs("jQuery('#" . $this->options['id'] . "'). pwstrength({common: {$pwstrengthParams}});");
+        Yii::$app->view->registerJs("jQuery('#" . $this->options['id'] . "'). pwstrength({ {$pwstrengthParams}});");
     }
 
 }
