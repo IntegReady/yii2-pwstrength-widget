@@ -13,7 +13,13 @@ class Pwstrength extends InputWidget
      * Default: 6
      *
      */
-    public $minChar = [];
+    public $minChar;
+    /**
+     * @var String  The username field to match a password to, to ensure the user does not use the same value for their password.)
+     * Default: "#username"
+     *
+     */
+    public $usernameField;
 
     public function init()
     {
@@ -35,12 +41,11 @@ class Pwstrength extends InputWidget
      */
     public function registerAssets()
     {
-        $minCharInteger = ($this->minChar);
-        $pwstrengthParams = "minChar: {$minChar} ";
+        $pwstrengthParams = "minChar: {$this->minChar}, ";
+        $pwstrengthParams .= "usernameField: '{$this->usernameField}'";
 
         PwstrengthAsset::register($this->view);
-        //Yii::$app->view->registerJs("jQuery('#" . $this->options['id'] . "'). pwstrength({common: {minChar: 8, usernameField: '#signupform-nickname'}});");   работает!
-        Yii::$app->view->registerJs("jQuery('#" . $this->options['id'] . "'). pwstrength({{$pwstrengthParams}});");
+        Yii::$app->view->registerJs("jQuery('#" . $this->options['id'] . "'). pwstrength({ {$pwstrengthParams}});");
     }
 
 }
