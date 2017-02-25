@@ -1,6 +1,6 @@
 <?php
 
-namespace integready\Pwstrength;
+namespace integready\pwstrength;
 
 use Yii;
 use yii\helpers\Html;
