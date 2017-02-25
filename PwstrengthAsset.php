@@ -6,7 +6,7 @@ use yii\web\AssetBundle;
 
 /**
  * Class PwstrengthAsset
- * @package integready\Pwstrength
+ * @package integready\pwstrength
  */
 class PwstrengthAsset extends AssetBundle
 {

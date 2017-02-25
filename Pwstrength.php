@@ -8,7 +8,7 @@ use yii\widgets\InputWidget;
 
 /**
  * Class Pwstrength
- * @package integready\Pwstrength
+ * @package integready\pwstrength
  */
 class Pwstrength extends InputWidget
 {
