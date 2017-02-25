@@ -1,6 +1,6 @@
 <?php
 
-namespace integready\Pwstrength;
+namespace integready\pwstrength;
 
 use yii\web\AssetBundle;
 
