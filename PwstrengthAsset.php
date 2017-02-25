@@ -10,7 +10,7 @@ use yii\web\AssetBundle;
  */
 class PwstrengthAsset extends AssetBundle
 {
-    public $sourcePath = '@muravshchyk/Pwstrength/assets';
+    public $sourcePath = '@integready/pwstrength/assets';
 
     public $js = [
         'js/pwstrength-bootstrap-1.2.9.js',
