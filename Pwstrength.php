@@ -1,11 +1,15 @@
 <?php
-namespace muravshchyk\Pwstrength;
+
+namespace integready\Pwstrength;
 
 use Yii;
 use yii\helpers\Html;
 use yii\widgets\InputWidget;
 
-
+/**
+ * Class Pwstrength
+ * @package integready\Pwstrength
+ */
 class Pwstrength extends InputWidget
 {
     /**
@@ -28,15 +32,6 @@ class Pwstrength extends InputWidget
     }
 
     /**
-     * @return string
-     */
-    public function run()
-    {
-        Html::addCssClass($this->options, 'form-control');
-        return Html::activeTextInput($this->model, $this->attribute, $this->options);
-    }
-
-    /**
      * Registers the needed assets
      */
     public function registerAssets()
@@ -48,4 +43,13 @@ class Pwstrength extends InputWidget
         Yii::$app->view->registerJs("jQuery('#" . $this->options['id'] . "'). pwstrength({ {$pwstrengthParams}});");
     }
 
+    /**
+     * @return string
+     */
+    public function run()
+    {
+        Html::addCssClass($this->options, 'form-control');
+
+        return Html::activeTextInput($this->model, $this->attribute, $this->options);
+    }
 }
