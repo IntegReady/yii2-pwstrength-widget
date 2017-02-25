@@ -1,22 +1,30 @@
 {
-    "name": "muravshchyk/yii2-pwstrength-widget",
-    "description": "Yii2 widget created on basis of jquery plugin https://github.com/ablanco/jquery.pwstrength.bootstrap",
-    "type": "yii2-extension",
-    "keywords": ["yii2","extension","helpers","widgets"],
-    "license": "BSD-3-Clause",
-    "authors": [
-        {
-            "name": "Igor Muravshchyk",
-            "email": "muravshchyk@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "yiisoft/yii2": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "muravshchyk\\Pwstrength\\": ""
-        }
+  "name": "integready/yii2-pwstrength-widget",
+  "description": "Yii2 widget created on basis of jquery plugin https://github.com/ablanco/jquery.pwstrength.bootstrap",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "extension",
+    "helpers",
+    "widgets"
+  ],
+  "homepage": "https://github.com/IntegReady/yii2-pwstrength-widget",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "IntegReady"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "yiisoft/yii2": "*"
+  },
+  "require-dev": {
+    "yiisoft/yii2-coding-standards": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "integready\\pwstrength\\": ""
+    }
+  }
 }
